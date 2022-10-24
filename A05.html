@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+     <!--Asahi Nago, Monday Oct 3rd, sushi ordering-->
+<head> 
+    <link rel="stylesheet" href="styles.css">
+<h1 style="color:grey; text-align:center; font-family: Arial, Helvetica, sans-serif"> Welcome to My Sushi Restaurant</h1>
+<title>In-Class Forms</title> 
+</head> 
+<body style="background-color:beige;" >
+    <form>
+    <h2 style="color:navy; font-family: Arial, Helvetica, sans-serif;">Customer Information</h2>
+    <style>
+        table, th, td{
+            border:1px solid black;
+        }
+        body {
+    background-image: url('sushipic.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:99.5% 100%;
+}
+    </style>
+    <table style="Width:25%">
+    <tr>
+        <th>First Name</th>
+        <td><input type=”text” size="50"></td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td><input type=”text” size="50"></td> 
+    </tr>
+    <tr>
+        <th>Phone Number</th>
+        <td><input type=”text” size="50"></td> 
+    </tr>
+    <tr>
+        <th>Street Address</th>
+        <td><input type=”text” size="50"></td> 
+    </tr>
+    </Table>
+<h2 style="font-family: Arial, Helvetica, sans-serif">Delivery option</h2>
+<p>
+    <input type="radio" name="station" value="Pickup"> Pickup
+    <input type="radio" name="station" value="Delivery"> Delivery
+    <input type="radio" name="station" value="Dine-in"> Dine-in
+</p>
+<label for="days">Time:</label>
+<select name="choices" id="days">
+    <option>10:00AM~12:00PM</option>
+    <option>12:00~2:00PM</option>
+    <option>2:00PM~4:00PM</option>
+    <option>4:00PM~6:00PM</option>
+    <option>6:00PM~8:00PM</option>
+    <option>8:00PM~10:00PM</option><br>
+</select>
+<br><br>
+<TEXTAREA NAME="comments" ROWS=4 COLS=40 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif" value="Enter for specific direction">
+Enter for specific direction.
+</TEXTAREA>
+<h2 style="color: blue; font-family: Arial, Helvetica, sans-serif;">Available sushi</h2>
+<p>
+    <input type="checkbox" name="station" value="Tuna"> Tuna
+    <input type="checkbox" name="station" value="Shrimp"> Shrimp
+    <input type="checkbox" name="station" value="Salmon"> Salmon
+    <input type="checkbox" name="station" value="Squid"> Squid
+    <input type="checkbox" name="station" value="Octopus"> Octopus
+    <input type="checkbox" name="station" value="Red caviar"> Red caviar
+</p>
+<h2 style="font-family: Arial, Helvetica, sans-serif;">Utensils</h2>
+<p>
+    <input type="radio" name="station" value="Chopsticks">Chopsticks
+    <input type="radio" name="station" value="Fork">Fork
+    <input type="radio" name="station" value="Napkins">Napkins
+    <input type="radio" name="station" value="Everything">Everything
+</p>
+<p>
+    <input type="submit" value="Order here">
+    <input type="reset" value="Clear">
+</p>
+</form>
+</body>
+</html>
