@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <h1 style="text-align:center;">Where are you from?</h1>
+        <script>
+            function glue()
+            {
+              document.querySelector("#full").value = 
+                  document.querySelector("#first").value
+                + ",  "
+                + document.querySelector("#last").value
+            }
+            function choice()
+            {
+                alert("I was born in 2001!");
+            }
+            function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "You are from "+ document.querySelector("#first").value;
+         }
+         </script>
+    </head>
+    <body style="background-color:beige;">
+        <form name="class">
+            <div id=changeText>
+                Where are you from?
+            </div>
+            Country: <input type="text" id="first"
+            onchange="hey();"><br>
+            City: <input type="text" id="last"
+                                onchange="glue();"><br>
+            You are from: <input type="text" id="full"><br>
+        <p>
+            When did you born?<br>
+            <input type="checkbox" name="class" value="2000"> 2000
+            <input type="checkbox" name="class" value="2001" onclick="choice();">2001
+            <input type="checkbox" name="class" value="2002"> 2002
+            <input type="checkbox" name="class" value="2003"> 2003
+            <input type="checkbox" name="class" value="2004"> 2004
+            <input type="checkbox" name="class" value="2005"> 2005
+        </p>
+        <input type="reset" value="clear entries">
+        </form>
+    </body>
+</html>
