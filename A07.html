@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Hello!</title>
+    <script>
+    function makeRed()
+    {
+        document.querySelector("body").style.backgroundColor="red";
+    }
+    function makeBlue()
+    {
+        document.querySelector("body").style.backgroundColor="blue";
+    }
+    function makeGreen()
+    {
+        document.querySelector("body").style.backgroundColor="green";
+    }
+    function makeWhite()
+    {
+        document.querySelector("body").style.backgroundColor="white";
+    }
+    function add()
+    {
+        document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         + parseFloat(document.querySelector("#second").value);
+    }
+    function subtract()
+    {
+        document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         - parseFloat(document.querySelector("#second").value); 
+    }
+    function multiply()
+    {
+        document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         * parseFloat(document.querySelector("#second").value);
+    }
+    function division()
+    {
+        document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         / parseFloat(document.querySelector("#second").value);
+    }
+    function doSum()
+        {
+           var sum=0;
+           var N = parseInt( document.querySelector("#N").value );
+           var E = parseInt( document.querySelector("#E").value );
+           for (i=N; i<=E; i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+        }
+        function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "You are from "+ document.querySelector("#first").value;
+         }
+    </script>
+</head>
+    <body>
+    <form name=inclass>
+        <h1> Change the background-color</h1>
+        <p>
+            <input type="button" value="Red Button" onclick="makeRed();">
+            <input type="button" value="Blue Button" onclick="makeBlue();">
+            <input type="button" value="Green Button" onclick="makeGreen();">
+            <input type="button" value="White Button" onclick="makeWhite();">
+        </p>
+        <h1>Juniata Calculator</h1>
+        <p>
+            <input type="text" id="first">
+            <input type="button" value="+" onclick="add()">
+            <input type="button" value="-" onclick="subtract()">  
+            <input type="button" value="*" onclick="multiply()">
+             <input type="button" value="/" onclick="division()">
+             <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+             <input type=text id="full"><br>
+        </p>
+        <h1>Summation here!!</h1>
+        <p>
+            Starts from: <input type=text id="N"><br>
+                Ends here: <input type=text id="E"><br>
+                <input type=button value="Start the Sum" onclick="doSum();">
+                    <div id="sumHere">
+                        What's the total?                    
+                    </div>
+        </p>
+        <p>
+            <input type="reset" value="clear entries">
+        </p>
+    </form>
+    </body>
+   </html>
